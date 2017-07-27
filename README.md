@@ -1,4 +1,4 @@
-# Vituremart3.0-with-Joomla-2.5
+# Vituremart3.2.x-with-Joomla-3.7.x
 Paysolutions Payment
 เพิ่มเติม 
 1.หลังจากทำการดาวน์โหลด ให้ทำการแตกไฟล์ 
