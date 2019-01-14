@@ -142,7 +142,6 @@ class plgVmPaymentPaysolutions extends vmPSPlugin {
 		default:
 			$payso_server = "https://www.thaiepay.com/epaylink/payment.aspx";
 		}
-		
 
 		// add spin image
 		$html = '<form action="'.$payso_server.'" method="post" name="vm_paysolutions_form"  accept-charset="UTF-8">';
@@ -150,7 +149,7 @@ class plgVmPaymentPaysolutions extends vmPSPlugin {
 		$html .= '<input type="hidden" name="payso" value="payso" />
 <input type="hidden" name="merchantid" value="'.$method->paysolutions_account.'" />
 <input type="hidden" name="refno" value="'.$order['details']['BT']->virtuemart_order_id.'" />
-<input type="hidden" name="customeremail" value="'.$order['email']['BT']->order_number.'" />
+<input type="hidden" name="customeremail" value="'.$order['details']['BT']->email.'" />
 <input type="hidden" name="productdetail" value="'.JText::_('Payment for order') . ': ' . $order['details']['BT']->order_number. '">
 <input type="hidden" name="total" value="'.$totalInPaymentCurrency['value'].'" />
 <input type="hidden" name="currencyCode" value="'.$cur.'" />
